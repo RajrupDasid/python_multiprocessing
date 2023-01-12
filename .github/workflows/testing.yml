@@ -1,0 +1,18 @@
+name: Processing
+on:
+  push:
+    branches:
+      - master
+      - addci
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup python 3.11
+        uses: actions/checkout@v2
+        with:
+          python-version: 3.11
+      - name: Processing Testing
+        run: |
+          python calc.py
