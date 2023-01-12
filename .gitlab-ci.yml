@@ -1,0 +1,7 @@
+stages:
+  - testing
+processing testing:
+  image: python
+  stage: testing
+  script:
+  - python calc.py
